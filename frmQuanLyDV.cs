@@ -129,12 +129,3 @@ namespace QL_KS.GUI
             }
             dgvDanhSach.DataSource = DAL_DV.GetAll(dk);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult traloi;
-            traloi = MessageBox.Show("Bạn có muốn thoát", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traloi == DialogResult.OK) this.Close();
-        }
-    }
-}
