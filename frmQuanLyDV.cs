@@ -125,7 +125,4 @@ namespace QL_KS.GUI
             dk = "TenDV like N'%" + txtTimTen.Text + "%'";
             if (txtTimMa.Text != null)
             {
-                dk += " and MaDV like N'%" + txtTimMa.Text + "%'";
-            }
-            dgvDanhSach.DataSource = DAL_DV.GetAll(dk);
-        }
+                dk += " and MaDV like
