@@ -64,20 +64,4 @@ namespace QL_KS.GUI
             ecHD.ThanhTien = sum;
             ecHD.MaHD = cmbMahd.Text;
             dalHD.ThanhToan(ecHD);
-            //thay doi thong tin phong
-            EC_Phong ph = new EC_Phong();
-            ph.MaPh = cn.GetValue(@"select MaPh from tblPhieuThue where MaPhieu = '" + cmbMahd.Text + "'");
-            ph.TrangThai = "Tốt";
-            dalPh.TraPhong(ph);
-            cmbKhachhang.ResetText();
-            cmbMahd.ResetText();
-            dgvThongtin.DataSource = null;
-
-        }
-
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-    }
-}
+          
