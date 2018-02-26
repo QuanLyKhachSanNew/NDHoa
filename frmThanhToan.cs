@@ -62,6 +62,4 @@ namespace QL_KS.GUI
             MessageBox.Show("Tổng số tiền thanh toán: " + sum.ToString());
             //update hoa don
             ecHD.ThanhTien = sum;
-            ecHD.MaHD = cmbMahd.Text;
-            dalHD.ThanhToan(ecHD);
-          
+                   
