@@ -118,11 +118,4 @@ namespace QL_KS.GUI
             dgvDanhSach.DataSource = DAL_DV.GetAll(dk);
         }
 
-        private void txtTimTen_TextChanged(object sender, EventArgs e)
-        {
-            txtTimMa.Clear();
-            string dk = "";
-            dk = "TenDV like N'%" + txtTimTen.Text + "%'";
-            if (txtTimMa.Text != null)
-            {
-                dk += " and MaDV like
+        private void txtTimTen_TextChanged
