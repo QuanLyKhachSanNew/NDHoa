@@ -55,4 +55,4 @@ namespace QL_KS.GUI
 			int sum = 0;
             for (int i = 0;i<dgvThongtin.Rows.Count;i++)
             {
-                sum += int.Parse(dgvThongtin.Rows[i].Cells                  
+                sum += int.Parse(dgvThongtin.Rows[i].Cells                
