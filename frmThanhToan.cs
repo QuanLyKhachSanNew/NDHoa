@@ -50,7 +50,8 @@ namespace QL_KS.GUI
             dtpNgayra.Text = cn.GetValue(@"select NgayRa from tblHoaDon where MaHD = '" + cmbMahd.Text + "'");
         }
 
-        private void btnThanhtoan_Click(object sender, EventArgs e)
+       
+ private void btnThanhtoan_Click(object sender, EventArgs e)
         {
 			int sum = 0;
             for (int i = 0;i<dgvThongtin.Rows.Count;i++)
