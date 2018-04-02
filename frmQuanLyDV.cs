@@ -23,7 +23,8 @@ namespace QL_KS.GUI
         {
             dgvDanhSach.DataSource = DAL_DV.GetAll();
         }
-        private void dgvDanhSach_CellEnter(object sender, DataGridViewCellEventArgs e)
+        
+private void dgvDanhSach_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             txtGia.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Gia"].Value.ToString();
             txtMa.Text = dgvDanhSach.Rows[e.RowIndex].Cells["MaDV"].Value.ToString();
