@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -23,7 +24,8 @@ namespace QL_KS.GUI
         {
             dgvDanhSach.DataSource = DAL_DV.GetAll();
         }
-        
+ 
+       
 private void dgvDanhSach_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             txtGia.Text = dgvDanhSach.Rows[e.RowIndex].Cells["Gia"].Value.ToString();
