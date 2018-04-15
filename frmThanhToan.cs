@@ -16,12 +16,16 @@ namespace QL_KS.GUI
         KetNoiData cn = new KetNoiData();
         EC_HoaDon ecHD = new EC_HoaDon();
         DAL_HoaDon dalHD = new DAL_HoaDon();
-        private int _Gia;
+        
+
+private int _Gia;
         public frmThanhToan()
         {
             InitializeComponent();
         }
-        public static int getCost(DateTime dateIn, DateTime dateOut, int cost)
+      
+
+  public static int getCost(DateTime dateIn, DateTime dateOut, int cost)
         {
             TimeSpan Time = dateOut - dateIn;
             int sum = Time.Days;
@@ -35,7 +39,8 @@ namespace QL_KS.GUI
             cmbKhachhang.DisplayMember = "tenKH";
         }
 
-        private void cmbKhachhang_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbKhachhang_SelectedIndexChanged(object sender, 
+EventArgs e)
         {
             DataTable tb = cn.GetDataTable("Select distinct h.MaHD from tblKhachHang k, tblHoaDon h, tblPhieuThue p where k.MaKH = p.MaKH and p.MaPhieu = h.MaPhieuThue and k.MaKH='" + cmbKhachhang.SelectedValue.ToString() + "'");
             cmbMahd.DataSource = tb;
